@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea { 
+  width: 100%;
+  padding: 12px;
+    text-align: center;
+ 
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+    
+<body>
+
+<h1>Donation Section</h1>
+
+<div class="container">
+  <div style="text-align:center">
+      
+      
+   <div class="Welcome-text">
+            <h3><big>Fill The Account Section Below</big></h3> 
+            
+            </div>
+      
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="donate.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+           <label for="Types">Choose Payment Methood</label>
+        <select id="Type" name="Type">
+              <option value="Public Multi-Media">None</option>
+        <option value="Public Multi-Media">Visa</option>
+          <option value="Product Specific">Masrter Card</option>
+          <option value="Quality-Based">Paytm</option>
+             <option value="Delivery-Time">Credit Card</option>
+            <option value="Delivery-Time">American Express</option>
+          
+           <label for="fname">Card Holder Name</label>
+        <label for="fname"></label>
+        <input type="text" id="fname" name="firstname" placeholder="card holder name..">
+       
+          
+          <label for="Contact">Card number</label>
+        <input type="number" id="Contact" name="Contact" placeholder="card number..">
+          
+          <label for="Contact">Enter cvv</label>
+        <input type="number" id="Contact" name="Contact" placeholder="cvv.."><br>
+            
+              <br>    <label for="Contact">Expiry Date</label>
+        <input type="date" id="Contact" name="Contact" placeholder="DD/MM/YY.."><br><br>
+            
+        </select>
+          <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
