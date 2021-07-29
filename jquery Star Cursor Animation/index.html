@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>jQuery Stars</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/foundation.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link media="all" rel="stylesheet" href="css/all.css">
+	<meta name="description" content="jQuery plugin that adds some &quot;Magic&quot; shining stars on mouse movement effect.">
+	<meta name="keywords" content="jstars, jquery, jquery plugin, magic effect, mouse move effect, jquery stars">
+</head>
+<body id="page-top">
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+	    <div class="navbar-header page-scroll">
+	        <button data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" class="navbar-toggle" type="button">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	        </button>
+	        <a href="#page-top" class="navbar-brand">
+	            jQuery Stars
+	        </a>
+	    </div>
+	    <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+	        <ul class="nav navbar-nav navbar-right">
+	            <li><a href="#page-top">About</a></li>
+	            <li><a href="#usage">Usage</a></li>
+	            <li><a href="#examples">Examples</a></li>
+	            <li><a href="#options">Options</a></li>
+	            <li><a href="#custom">Customize</a></li>
+	        </ul>
+	    </div>
+	</div>
+</nav>
+<header class="info-box">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1>jQuery Stars cursor animation</h1>
+				<hr class="star-light">
+				<p>This is a jQuery plugin that adds some "Magic" to your site.</p>
+				<p>Under "Magic" we means shining stars, which appear when you move your mouse.</p>
+				<p>This excited effect can be added to the any block element on the site or even on all your site!</p>
+				<p>It is very easy to use and has some parameters to suit different site backgrounds.</p>
+				<p class="text-center"><a class="btn btn-primary" href="https://github.com/justcoded/jquery-stars" target="_blank">Download</a></p>
+			</div>
+		</div>
+	</div>
+</header>
+
+<section id="usage" class="example-box examples white">
+	<div class="container">
+		<h1>Usage</h1>
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<p>1. Include jQuery and our script at the bottom of your page:</p>
+				<pre><code class="html">
+...
+
+&lt;script src="//code.jquery.com/jquery-1.12.0.min.js"&gt;&lt;/script&gt;
+&lt;script src="path/to/scripts/jquery-stars.js"&gt;&lt;/script&gt;<br>
+				</code></pre>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<p>2. Add javascript code to your page or script file:</p>
+				<pre><code class="javascript">
+jQuery('#selector').jstars({
+	image_path: 'images', // folder with magic image
+	style: 'white',       // optional, color, default: white
+	frequency: 12         // optional, from 1 to 19
+});
+				</code>
+				</pre>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="examples" class="example-box blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 visible-md-block visible-lg-block">
+				<pre><code class="javascript">
+jQuery('#example-1').jstars({
+	image_path: 'images'  
+});
+				</code></pre>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<h2>Example 1: White</h2>
+				<p>This example illustrates "white" style. As you can see we do not specify any parameters, so style and frequency are set to "white" and "12" automatically.</p>
+			</div>
+			<div class="col-md-6 col-sm-12 visible-xs-block visible-sm-block">
+				<pre><code class="javascript">
+jQuery('#example-1').jstars({
+	image_path: 'images'  
+});
+				</code></pre>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="example-blue" class="example-box white">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<h2>Example 2: Blue</h2>
+				<p>This one illustrates "blue" style.</p>
+				<p>Also we increased frequency a bit.</p>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<pre><code class="javascript">
+jQuery('#example-blue').jstars({
+	image_path: 'images',
+	style: 'blue',
+	frequency: 15
+});
+				</code></pre>
+			</div>
+		</div>
+	</div>
+</section>
+	
+<section id="example-yellow" class="example-box green">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 visible-md-block visible-lg-block">
+				<pre><code>
+jQuery('#example-yellow').jstars({
+	image_path: 'images',
+	style: 'yellow',
+	frequency: 20
+});
+				</code></pre>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<h2>Example 3: Yellow</h2>
+				<p>This example illustrates "yellow" style.</p>
+				<p>And the frequency is set to max value.</p>
+			</div>
+			<div class="col-md-6 col-sm-12 visible-xs-block visible-sm-block">
+<pre><code>
+jQuery('#example-yellow').jstars({
+	image_path: 'images',
+	style: 'yellow',
+	frequency: 20
+});
+				</code></pre>
+			</div>
+		</div>
+	</div>
+</section>	
+	
+<section id="example-red" class="example-box white">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<h2>Example 4: Red</h2>
+				<p>This example illustrates "red" style.</p>
+				<p>The frequency is low here, so the stars shine rarely.</p>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<pre><code class="javascript">
+jQuery('#example-red').jstars({
+	image_path: 'images',
+	style: 'red',
+	frequency: 5
+});
+				</code></pre>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="example-green" class="example-box blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12 visible-md-block visible-lg-block">
+				<pre><code class="javascript">
+jQuery('#example-green').jstars({
+	image_path: 'images',
+	style: 'green'
+});
+				</code></pre>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<h2>Example 5: Green</h2>
+				<p>This example illustrates "green" style.</p>
+			</div>
+			<div class="col-md-6 col-sm-12 visible-xs-block visible-sm-block">
+				<pre><code class="javascript">
+jQuery('#example-green').jstars({
+	image_path: 'images',
+	style: 'green'
+});
+				</code></pre>
+			</div>
+		</div>
+	</div>
+</section>
+	
+<section id="example-rand" class="example-box green">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<h2>Example 6: Random</h2>
+				<p>Our plugin has tricky mode - to show all stars colors randomly.</p>
+				<p>You should use style "rand" for this feature.</p>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<pre><code class="javascript">
+jQuery('#example-rand').jstars({
+	image_path: 'images',
+	style: 'rand'
+});
+				</code></pre>
+			</div>
+		</div>
+	</div>
+</section>
+	
+
+<section id="options" class="example-box example-single">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2>Plugin options</h2>
+				<p>Please find the full list of options below:</p>
+				<pre><code class="javascript">
+jQuery('#example-rand').jstars({
+	image_path: '', // this is requried option
+	image: 'jstar-map.png', // this is requried option
+	style: 'white',
+	frequency: 12,
+	// if you check the sprite image you will see it has
+	// several rows of different colors
+	// style map sets the coordinates of each row
+	style_map: { 
+		white: 0,
+		blue: -27,
+		green: -54,
+		red: -81,
+		yellow: -108
+	},
+	width: 27, // single star width
+	height: 27, // single star height
+	delay: 300 // rotate speed
+});
+				</code></pre>
+			</div>
+		</div>
+	</div>
+</section>
+	
+<section id="custom" class="example-box dark">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<h2>Customize the image</h2>
+				<p>You can try to prepare your own asset to display different image instead of stars.</p>
+				<p>To do that you should make a sprite of 9 images, each next part is differ from previous with 40 degrees angle.</p>
+				<p>Let's try how candy cane looks... It will be good for Xmas eve :)</p>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<pre><code class="javascript">
+jQuery('#example-rand').jstars({
+	image_path: 'images',
+	image: 'candy-cane-stars.png',
+	style: 'white',
+	width: 34,
+	height: 34,
+	delay: 700,
+	frequency: 5
+});
+				</code></pre>
+			</div>
+		</div>
+	</div>
+</section>
+	
+<section id="custom2" class="example-box blue">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-12">
+				<h2>Old-school stars</h2>
+				<p>For old-school designs we have first version of stars which were released in v1.</p>
+			</div>
+			<div class="col-md-6 col-sm-12">
+				<pre><code class="javascript">
+jQuery('#custom2').jstars({
+	image_path: 'images',
+	image: 'jstar-map.png',
+	style: 'rand',
+	width: 27,
+	height: 27,
+	style_map: {
+		white: 0,
+		blue: -27,
+		green: -54,
+		red: -81,
+		yellow: -108
+	},
+	delay: 300
+});
+				</code></pre>
+			</div>
+		</div>
+	</div>
+</section>	
+	
+<section id="footer">
+	<div class="container">
+		<p>Made by <a href="https://justcoded.com" target="_blank">JustCoded</a></p>
+	</div>
+</section>	
+		
+	
+	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+	<script type="text/javascript" src="js/jquery-stars.js"></script>
+	<script type="text/javascript" src="js/smothscrool.js"></script>
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+</body>
+</html>
